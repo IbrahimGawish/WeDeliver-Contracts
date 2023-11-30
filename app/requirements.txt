@@ -1,0 +1,6 @@
+Flask
+mysql-connector
+setuptools
+apscheduler
+pytest
+python-dotenv
