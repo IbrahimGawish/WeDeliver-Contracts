@@ -8,11 +8,11 @@ dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 app = Flask(__name__)
 config = {
-  "user": os.environ.get("CONTRACT_USER") or "wedeliver",
-  "password": os.environ.get("CONTRACT_PASSWORD") or "We@2468",
+  "user": os.environ.get("CONTRACT_USER") or "contract_user",
+  "password": os.environ.get("CONTRACT_PASSWORD") or "contract_p@ss0rd",
   "host": os.environ.get("CONTRACT_HOST") or "db4free.net",
   "port": os.environ.get("CONTRACT_PORT") or "3306",
-  "database": os.environ.get("CONTRACT_DATABASE") or "WeDeliver",
+  "database": os.environ.get("CONTRACT_DATABASE") or "contract",
   'auth_plugin': 'mysql_native_password'
 }
 print(config,flush=True)
